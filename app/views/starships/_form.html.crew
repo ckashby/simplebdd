@@ -1,0 +1,12 @@
+Crew Members:
+
+<ul>
+	<%= fields_for :crew_members do |cm| %>  # Does this need equals sign????
+	  <li>
+		  <%= cm.label :name %>
+		  <%= cm.text_field :name %>
+		  <%= cm.label :division %>
+		  <%= cm.select(:division, ["Command", "Engineering", "Science"]) %>
+	  </li>
+	<% end %>
+</ul>
